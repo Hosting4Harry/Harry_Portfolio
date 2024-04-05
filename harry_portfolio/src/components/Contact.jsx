@@ -14,10 +14,39 @@ const Contact = () => {
     message: ""
   });
   const [loading, setLoading] = useState(false);
-  const handleChange = () => {
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
 
   }
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs.send(
+      'service_lfwdadq',
+      'template_cqaz2nh',
+      {
+        from_name: form.name,
+        to_name: 'Harry',
+        from_email: form.email,
+        to_email: "hosting4harry@gmail.com",
+        message: form.message
+      },
+      '9Vk0P0ifs9-GHU4j2'
+    ).then(() => {
+      setLoading(false);
+      alert('Thank you. I will get back to yo as soon as possible.');
+      setForm({
+        name: "",
+        email: "",
+        message: ""
+      })
+    }, (error) => {
+      setLoading(false);
+      console.log(error);
+      alert('Something went wrong!')
+    })
 
   }
   return (
