@@ -138,6 +138,7 @@ const Navigation = () => {
 
         return <div
           className="z-50"
+          key={index + "-" + btn}
           style={{ transform: `translate(${x}, ${y})` }}
         >
           <span className="rounded-full flex items-right justify-right custom-bg">
