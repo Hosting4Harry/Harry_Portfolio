@@ -18,7 +18,7 @@ const Navbar = () => {
           <img src='/logo.png' alt="logo" className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             Haraprasad &nbsp;
-            <span className='sm:block hidden '>| JavaScript Mastery</span>
+            <span className='sm:block hidden '>| Backend Developer</span>
           </p>
         </Link>
         <ul className='list-none hidden sm:flex fles-row gap-10'>

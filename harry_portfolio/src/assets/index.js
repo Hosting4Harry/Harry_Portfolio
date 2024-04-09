@@ -29,6 +29,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import chatbot from "./chatbot.png";
+import fabwear from "./fabwear.png";
+import portfolio from "./portfolio.png";
 
 export {
   logo,
@@ -56,6 +59,9 @@ export {
   shopify,
   starbucks,
   tesla,
+  chatbot,
+  fabwear,
+  portfolio,
   carrent,
   jobit,
   tripguide,

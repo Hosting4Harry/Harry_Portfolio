@@ -6,7 +6,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { github } from '../assets';
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, site_link }) => {
   return (
     <motion.div varients={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt options={{
@@ -21,8 +21,14 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             className='w-full h-full object-cover rounded-2xl'
           />
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+            {site_link &&
+              <div onClick={() => window.open(site_link, '_blank')}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer' title="site link">
+                <img src={image} alt="github" className='w-2/3 h-2/3  rounded-full' />
+              </div>
+            }
             <div onClick={() => window.open(source_code_link, '_blank')}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer' title="Github">
               <img src={github} alt="github" className='w-2/3 h-2/3 object-contain' />
             </div>
           </div>

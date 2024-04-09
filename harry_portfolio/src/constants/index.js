@@ -11,18 +11,12 @@ import {
   redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  chatbot,
+  fabwear,
+  portfolio,
 } from "../assets";
 
 export const navLinks = [
@@ -171,67 +165,70 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Cody The ChatBot",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Helping people create beautiful content at open AI chat app. It showcases the modern UI design with dynamic components built with react.",
     tags: [
       {
-        name: "react",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: chatbot,
+    source_code_link: "https://github.com/Hosting4Harry/Cody_the_Chatbot",
+    site_link: "https://codythechatbot.netlify.app"
   },
   {
-    name: "Job IT",
+    name: "Fabwear",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Ecommerce website built with react and node demenstrates the vast use of javascript to add custom functionality to a single page web application.",
     tags: [
       {
-        name: "react",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "NodeJS",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Bootstrap",
         color: "pink-text-gradient",
       },
+      {
+        name: "Razorpay",
+        color: "white-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: fabwear,
+    source_code_link: "https://github.com/Hosting4Harry/FabWear",
+    site_link: "https://fabwear4.netlify.app"
   },
   {
-    name: "Trip Guide",
+    name: "Portfolio",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A comprehensive 3D design for portfolio to showcase my skills in development for modern UI and adaptive nature to different technologies .",
     tags: [
       {
-        name: "nextjs",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "ThreeJs",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: portfolio,
+    source_code_link: "https://github.com/Hosting4Harry/Harry_Portfolio",
+    site_link: "https://haraprasad.netlify.app/",
   },
 ];
 const btnLists = [
