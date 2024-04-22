@@ -14,8 +14,13 @@ const Projects = () => {
                         <motion.div
                             whileInView={{ opacity: 1, x: 0 }}
                             initial={{ opacity: 0, x: -100 }}
-                            transition={{ duration: 1.5 }} className="w-full lg:w-1/4 flex justify-center sm:justify-start">
-                            <img src={project.image} alt={project.title} width={150} height={150} className="mb-6 rounded border-2" />
+                            transition={{ duration: 1.5 }}
+                            className="w-full lg:w-1/4 flex justify-center sm:justify-start">
+                            <motion.img
+                                whileHover={{ scale: 1.2 }}
+                                whileTap={{ scale: 1.1 }}
+                                transition={{ duration: 0.5 }}
+                                src={project.image} alt={project.title} width={150} height={150} className="mb-6 rounded border-2" />
                         </motion.div>
                         <motion.div
                             whileInView={{ opacity: 1, x: 0 }}
@@ -24,7 +29,10 @@ const Projects = () => {
                             <h6 className="mb-2 font-semibold flex justify-center sm:justify-normal">{project.title}</h6>
                             <p className="mb-4 text-neutral-400 flex text-center sm:text-start">{project.description}</p>
                             {project.technologies.map((tech, index) => (
-                                <span key={index} className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800">{tech}</span>
+                                <span key={index} className={`mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-bold ${index % 2 === 0 ?
+                                    "text-red-800" :
+                                    index % 3 === 0 ? "text-green-800" : "text-blue-800"
+                                    }`}>{tech}</span>
                             ))}
                         </motion.div>
                     </div>
