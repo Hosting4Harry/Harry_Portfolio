@@ -11,7 +11,7 @@ const About = () => {
                 transition={{ duration: 1.5 }} className="my-20 text-center text-4xl">
                 About
                 <span className="text-neutral-500">
-                    &nbsp;Me
+                    &nbsp;Me.
                 </span>
             </motion.h1>
             <div className="flex flex-wrap">

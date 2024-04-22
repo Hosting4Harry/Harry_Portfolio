@@ -10,7 +10,9 @@ const Contact = () => {
             <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
-                transition={{ duration: 1.5 }} className="my-10 text-center text-4xl">Get In Touch</motion.h1>
+                transition={{ duration: 1.5 }} className="my-10 text-center text-4xl">Get In <span className="text-neutral-500">
+                    Touch.
+                </span></motion.h1>
             <div className='flex flex-wrap overflow-hidden justify-center items-center gap-5'
                 id='mail'
             >
