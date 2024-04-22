@@ -54,7 +54,7 @@ const Contact = () => {
                     transition={{ duration: 0.5 }}
 
                     className={`flex-1 bg-black-100 p-8 rounded-2xl w-full justify-start lg:max-w-[500px] bg-black-100 ${visible ? "" : "hidden"}`}>
-                    <Mail />
+                    <Mail setVisible={setVisible}/>
                 </motion.div>
 
             </div>

@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { BiArrowBack } from "react-icons/bi";
 
-const Mail = () => {
+const Mail = ({ setVisible }) => {
     const formRef = useRef();
     const [form, setForm] = useState({
         name: "",
@@ -50,8 +51,15 @@ const Mail = () => {
         <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className='mt-12 flex flex-col gap-8'
+            className='relative mt-12 flex flex-col gap-8'
         >
+            <div className='absolute -inset-10 flex justify-end me-10 card-img_hover'>
+                <div
+                    className='bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer' title="Github"
+                    onClick={() => setVisible(prev => !prev)}>
+                    <BiArrowBack className='w-2/3 h-2/3 object-contain text-white' />
+                </div>
+            </div>
             <label className='flex flex-col'>
                 <span className='text-white font-medium mb-4'>Your Name</span>
                 <input
