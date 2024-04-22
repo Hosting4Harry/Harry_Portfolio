@@ -55,7 +55,7 @@ const Mail = ({ setVisible }) => {
         >
             <div className='absolute -inset-10 flex justify-end me-10 card-img_hover'>
                 <div
-                    className='bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer' title="Github"
+                    className='bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer' title="Back"
                     onClick={() => setVisible(prev => !prev)}>
                     <BiArrowBack className='w-2/3 h-2/3 object-contain text-white' />
                 </div>
