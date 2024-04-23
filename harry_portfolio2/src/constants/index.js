@@ -45,15 +45,15 @@ export const PROJECTS = [
     title: "Income Analyzer",
     image: IA,
     description:
-      "A platform for uploading account reports, reviewing accounts detailed reports and analyzing credit, debit and loan for accounts, rsik factors for account etc.",
+      "A platform for uploading account reports, reviewing accounts detailed reports and analyzing credit, debit and loan for accounts, risk factors for account etc.",
     technologies: ["HTML", "CSS", "Sveltkit"],
   },
   {
     title: "Voucher Import",
     image: VI,
     description:
-      "A platform for uploading account reports, reviewing accounts detailed reports and analyzing credit, debit and loan for accounts, rsik factors for account etc.",
-    technologies: ["HTML", "CSS", "Sveltkit"],
+      "A platform for reviewing voucher lists and their related distributions with CRUD, export functionality.",
+    technologies: ["React", "Node.js", "Tailwind"],
   },
   {
     title: "Portfolio Website",
