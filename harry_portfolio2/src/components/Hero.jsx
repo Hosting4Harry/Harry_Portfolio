@@ -30,7 +30,7 @@ const Hero = () => {
                             whileHover={{ scale: 1.2 }}
                             whileTap={{ scale: 1.1 }}
                             drag="x"
-                            dragConstraints={{ left: -100, right: 100 }} className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">Node.js / React Developer</motion.span>
+                            dragConstraints={{ left: -100, right: 100 }} className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">Full Stack Developer</motion.span>
                         <motion.p
                             whileInView={{ opacity: 1, x: 0 }}
                             initial={{ opacity: 0, x: -100 }}
