@@ -28,7 +28,7 @@ const Projects = () => {
                             transition={{ duration: 1.5 }} className="w-full max-w-xl lg:w-3/4">
                             <h6 className="mb-2 font-semibold flex justify-center sm:justify-normal">{project.title}</h6>
                             <p className="mb-4 text-neutral-400 flex text-center sm:text-start">{project.description}</p>
-                           <div className="flex items-center sm:items-start justify-center sm:justify-start">
+<div className="mt-2 flex flex-wrap gap-2">
                             {project.technologies.map((tech, index) => (
                                 <span key={index} className={`mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-bold ${index % 2 === 0 ?
                                     "text-red-800" :

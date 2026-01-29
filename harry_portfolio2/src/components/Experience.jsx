@@ -25,12 +25,24 @@ const Experience = () => {
                             <h6 className="mb-2 font-semibold ">{experience.role}-
                                 <span className="text-sm text-purple-100">{experience.company}</span></h6>
                             <p className="mb-4 text-neutral-400">{experience.description}</p>
-                            {experience.technologies.map((tech, index) => (
-                                <span key={index} className={`mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium ${index % 2 === 0 ?
-                                    "text-green-800" :
-                                    index % 3 === 0 ? "text-red-800" : "text-purple-800"
-                                    }`}>{tech}</span>
-                            ))}
+<div className="mt-2 flex flex-wrap gap-2">
+  {experience.technologies.map((tech, index) => (
+    <span
+      key={tech}
+      className={`inline-flex items-center rounded-md px-2.5 py-1 text-xs font-semibold
+        ${
+          index % 2 === 0
+            ? "bg-green-900/40 text-green-300"
+            : index % 3 === 0
+            ? "bg-red-900/40 text-red-300"
+            : "bg-purple-900/40 text-purple-300"
+        }`}
+    >
+      {tech}
+    </span>
+  ))}
+</div>
+
                         </motion.div>
                     </div>
                 ))}
