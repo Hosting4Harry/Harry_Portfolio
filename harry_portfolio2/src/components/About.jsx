@@ -16,14 +16,20 @@ const About = () => {
             </motion.h1>
             <div className="flex flex-wrap">
                 <motion.div
-                    whileInView={{ opacity: 1, x: 0 }}
-                    initial={{ opacity: 0, x: -100 }}
-                    transition={{ duration: 0.5 }}
-                    className="w-full lg:w-1/2 lg:p-8">
-                    <div
-                        className="flex items-center justify-center"> <img className="rounded-2xl" src={aboutImg} alt="about" /></div>
+  whileInView={{ opacity: 1, x: 0 }}
+  initial={{ opacity: 0, x: -100 }}
+  transition={{ duration: 0.5 }}
+  className="w-full lg:w-1/2 lg:p-8"
+>
+  <div className="flex items-center justify-center">
+    <img
+      src={aboutImg}
+      alt="about"
+      className="h-56 w-56 rounded-full lg:rounded-2xl object-cover lg:h-80 lg:w-80"
+    />
+  </div>
+</motion.div>
 
-                </motion.div>
                 <motion.div
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: 100 }}
