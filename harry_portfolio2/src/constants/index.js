@@ -4,6 +4,7 @@ import portfolio from "../assets/projects/portfolio.png";
 import IA from "../assets/projects/IA.png";
 import VI from "../assets/projects/VI.png";
 import rule_engine from "../assets/projects/rule_engine.png";
+import self_serve from "../assets/projects/self_serve.png";
 
 
 export const HERO_CONTENT = `I am a passionate Full-Stack Developer specializing in React, Next.js, SvelteKit, and Node.js, with 2.5+ years of hands-on experience building scalable, production-ready web applications. I have strong expertise in modern frontend development and backend API design, including RESTful services, SQL databases such as MySQL and MS SQL (T-SQL), and TypeScript-based architectures. I focus on writing clean, maintainable code and delivering reliable solutions that solve real business problems and improve user experience.`;
@@ -92,7 +93,7 @@ export const PROJECTS = [
   },
   {
     title: "Self-Serve Portal",
-    image: selfServe,
+    image: self_serve,
     description:
       "A customer-facing self-service portal enabling loan customers to manage payments, schedule installments, track payment history, and configure payment methods including autopay, built with a modern and accessible UI.",
     technologies: ["Next.js", "TypeScript", "shadcn/ui", "Tailwind CSS"],
