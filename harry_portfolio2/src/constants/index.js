@@ -6,74 +6,130 @@ import VI from "../assets/projects/VI.png";
 import rule_engine from "../assets/projects/rule_engine.png";
 
 
-export const HERO_CONTENT = `I am a passionate React / Node.js developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React, Next.js and Sveltkit, as well as back-end technologies like Node.js, MySQL and MSSQL. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate Full-Stack Developer specializing in React, Next.js, SvelteKit, and Node.js, with 2.5+ years of hands-on experience building scalable, production-ready web applications. I have strong expertise in modern frontend development and backend API design, including RESTful services, SQL databases such as MySQL and MS SQL (T-SQL), and TypeScript-based architectures. I focus on writing clean, maintainable code and delivering reliable solutions that solve real business problems and improve user experience.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 2 year of professional experience, I have worked with a variety of technologies, including React, Sveltkit, Angular, Next.js, Node.js and MySQL. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a dedicated and versatile Full-Stack Developer with 2.5+ years of professional experience building reliable and user-friendly web applications. I have worked across modern frontend and backend technologies including React, Next.js, SvelteKit, and Node.js, with strong experience in SQL databases such as MySQL and MS SQL. My development journey started with a curiosity for how systems work and has grown into a career focused on writing clean, maintainable code and delivering scalable solutions. I enjoy collaborating with cross-functional teams, solving complex technical problems, and continuously learning to adapt to evolving technologies.`;
 
 export const EXPERIENCES = [
   {
-    year: "Jun 2023 - Present",
-    role: "Jr. Software Engineer",
+    year: "Jul 2025 - Present",
+    role: "Software Engineer",
     company: "Evince Development Pvt. Ltd.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "Typescript", "React.js", "Sveltekit", "Next.js", "Node.js", "MySQL", "MSSQL"],
+    description: `Working as a full-stack engineer on FinTech and enterprise applications.
+Designing and developing scalable RESTful APIs using Node.js and Express.js.
+Building modern, maintainable frontends using Next.js and SvelteKit.
+Collaborating with stakeholders to translate business requirements into technical solutions.
+Focusing on performance, scalability, and clean architecture using TypeScript.`,
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Next.js",
+      "Express.js",
+      "SvelteKit",
+      "JavaScript",
+      "TypeScript",
+      "MySQL",
+      "MS SQL",
+      "Sequelize",
+      "Tailwind CSS"
+    ],
   },
   {
-    year: "Oct 2022 - Jun 2023",
+    year: "Jun 2023 - Jun 2025",
+    role: "Junior Software Engineer",
+    company: "Evince Development Pvt. Ltd.",
+    description: `Developed and maintained production web applications across FinTech and healthcare domains.
+Implemented RESTful APIs and backend services using Node.js, Express.js, and SQL databases.
+Migrated applications from JavaScript to TypeScript to improve reliability and maintainability.
+Worked closely with frontend and backend teams to deliver end-to-end features.
+Improved backend performance and data consistency using Sequelize ORM.`,
+    technologies: [
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "SvelteKit",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "MS SQL",
+      "Sequelize"
+    ],
+  },
+  {
+    year: "Oct 2022 - May 2023",
     role: "Associate Software Trainee",
     company: "Evince Development Pvt. Ltd.",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Javascript", "React.js", "MySQL", "Node.js"],
-  }
+    description: `Supported frontend and backend development tasks across multiple projects.
+Assisted in modernizing legacy systems and improving application security.
+Performed API testing, debugging, and documentation.
+Learned real-world development workflows, code reviews, and best practices.`,
+    technologies: [
+      "JavaScript",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Postman"
+    ],
+  },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image: fabwear,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, payment integration and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MySQL"],
-  },
-  {
-    title: "Hasanui",
-    image: hasanui,
-    description:
-      "A full fledged application based on hospital management with features such as opd management, ambulance management, bio-waste/medical-waste management, tracking doctor and paramedical and auditlog management.",
-    technologies: ["HTML", "CSS", "Angular", "Node.js", "MSSQL"],
-  },
-  {
-    title: "Income Analyzer",
+    title: "Income Analyzer (Bankuity)",
     image: IA,
     description:
-      "A platform for uploading account reports, reviewing accounts detailed reports and analyzing credit, debit and loan for accounts, risk factors for account etc.",
-    technologies: ["Sveltkit", "Chart.js", "Tailwind"],
+      "A FinTech platform for analyzing customer income health by uploading and reviewing account reports. Provides detailed credit, debit, and loan insights, income trends, and risk indicators to support informed lending decisions.",
+    technologies: ["SvelteKit", "Chart.js", "Tailwind CSS"],
   },
   {
-    title: "Voucher Import",
+    title: "Voucher Import & Manufacturing Schedule",
     image: VI,
     description:
-      "A platform for reviewing voucher lists and their related distributions with CRUD, export functionality.",
-    technologies: ["React", "Node.js", "Tailwind"],
+      "An enterprise manufacturing data management system to import vouchers, manage production schedules, and visualize operational data with advanced filtering, sorting, and export capabilities.",
+    technologies: ["React.js", "TypeScript", "Node.js", "MS SQL", "Tailwind CSS"],
+  },
+  {
+    title: "Self-Serve Portal",
+    image: selfServe,
+    description:
+      "A customer-facing self-service portal enabling loan customers to manage payments, schedule installments, track payment history, and configure payment methods including autopay, built with a modern and accessible UI.",
+    technologies: ["Next.js", "TypeScript", "shadcn/ui", "Tailwind CSS"],
+  },
+  {
+    title: "Troy (Rule Engine)",
+    image: rule_engine,
+    description:
+      "A rule management system that allows non-technical users to define, update, and manage loan approval rules and workflows. Dynamically applies rules to automate decision-making and control workflow progression.",
+    technologies: ["Next.js", "TypeScript", "React Flow", "AG Grid", "Tailwind CSS"],
   },
   {
     title: "Portfolio Website",
     image: portfolio,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information built with react js and threejs.",
-    technologies: ["React", "ThreeJs", "Tailwind"],
+      "A personal portfolio website showcasing projects, skills, and professional experience, built with modern React and interactive 3D visuals.",
+    technologies: ["React.js", "Three.js", "Tailwind CSS"],
   },
   {
-    title: "Troy(Rule Engine)",
-    image: rule_engine,
+    title: "Hasanui Healthcare",
+    image: hasanui,
     description:
-      "A dynamic application that enables the configuration of custom loan approval rules and workflows, automating decision-making based on defined conditions. It allows flexible rule management, triggers actions, and defines the next steps after each condition is satisfied.",
-    technologies: ["Next.js", "Ag-Grid", "xy-flow/react-flow", "Tailwind"],
+      "A comprehensive hospital management system covering OPD workflows, ambulance management, medical and bio-waste tracking, inventory handling, and audit log management, built for real-world healthcare operations.",
+    technologies: ["Angular", "Node.js", "Sequelize", "MS SQL"],
+  },
+  {
+    title: "E-Commerce Website",
+    image: fabwear,
+    description:
+      "A full-featured e-commerce application with product listings, shopping cart functionality, user authentication, and payment integration.",
+    technologies: ["React.js", "Node.js", "MySQL", "CSS"],
   },
 ];
 
+
 export const CONTACT = {
-  address1: "4/805, Sector - 3, Vishwas City - 1",
+  address1: "Shelter PG, Sector - 3, Vishwas City - 1",
   address2: "Chanakyapuri, Ahmedabad, Gujurat, 380060",
   phoneNo: "+91 707 755 2981 ",
   email: "tripathy.hp202@gmail.com",
